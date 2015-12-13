@@ -10,8 +10,11 @@ Date:               2014-03-31
 
 /*********************************************************************************************
 
-If you like My Ecobee Device and related smartapps, please support the developer:
-
+ This is a fork of the original code, before the developer put it behind a pay-wall. (Note that
+ it is still hosted on github, despite being commercial.) This fork is pushed back to before the project 
+ was changed. (As to why, I literally just bought an ecobee last week after seeing the support. I haven't
+ even had enough time using it to consider contributing. Had it been closed source already,
+ I would not have changed thermostats to begin with.)
 /*********************************************************************************************
 
 
