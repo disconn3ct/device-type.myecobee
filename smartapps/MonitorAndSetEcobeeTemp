@@ -2,7 +2,6 @@
  *  MonitorAndSetEcobeeTemp
  *
  *  Copyright 2014 Yves Racine
- *  LinkedIn profile: ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
  *
  *  Developer retains all right, title, copyright, and interest, including all copyright, patent rights, trade secret 
  *  in the Background technology. May be subject to consulting fees under the Agreement between the Developer and the Customer. 
@@ -42,8 +41,8 @@ def thresholdSettings() {
 			paragraph "MonitorAndSetEcobeeTemp,the smartapp that adjusts your programmed ecobee's setpoints based on indoor/outdoor sensors"
 			paragraph "Version 2.4.6" 
 			paragraph "Copyright©2014 Yves Racine"
-				href url:"http://github.com/yracine/device-type.myecobee", style:"embedded", required:false, title:"More information..."  
- 					description: "http://github.com/yracine/device-type.myecobee/blob/master/README.md"
+				href url:"http://github.com/disconn3ct/device-type.myecobee", style:"embedded", required:false, title:"More information..."  
+ 					description: "http://github.com/disconn3ct/device-type.myecobee/blob/master/README.md"
  		}
 		section("Monitor indoor/outdoor temp & adjust the ecobee thermostat's setpoints") {
 			input "ecobee", "capability.thermostat", title: "Which Ecobee?"

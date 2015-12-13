@@ -4,8 +4,6 @@ My Ecobee Device:  Custom ecobee device to enable more smart thermostat's capabi
 
 Author:             Yves Racine
 
-linkedIn profile:   ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
-
 Date:               2014-03-31
 
 /*********************************************************************************************
@@ -15,6 +13,7 @@ Date:               2014-03-31
  was changed. (As to why, I literally just bought an ecobee last week after seeing the support. I haven't
  even had enough time using it to consider contributing. Had it been closed source already,
  I would not have changed thermostats to begin with.)
+
 /*********************************************************************************************
 
 
@@ -37,7 +36,7 @@ c) Hit the "From Code" tab on the left corner
 
 d) Copy and paste the code  (you can use the 'raw' button to avoid 'forking' the code) under 
 
-https://github.com/yracine/device-type.myecobee/blob/master/myecobee-devicetype.groovy
+https://github.com/disconn3ct/device-type.myecobee/blob/master/myecobee-devicetype.groovy
 
 e) Hit the create button at the bottom
 
@@ -57,7 +56,7 @@ b) Hit the "+New SmartApp" at the top right corner
 c) Hit the "From Code" tab on the left corner
 
 d) Copy and paste the code from My ecobee Init (you can use the 'raw' button to avoid 'forking' the code)
-under http://github.com/yracine/device-type.myecobee/tree/master/smartapps
+under http://github.com/disconn3ct/device-type.myecobee/tree/master/smartapps
 
 e) Hit the create button at the bottom
 
@@ -145,7 +144,7 @@ You only need to edit the following parameters
 
 You can also use some of my smartapps that I've developed.
 
-http://github.com/yracine/device-type.myecobee/tree/master/smartapps
+http://github.com/disconn3ct/device-type.myecobee/tree/master/smartapps
 
 Amongst others:
 
@@ -160,7 +159,7 @@ that you can use them in your automation scenarios.
 
 See the following readme file for instructions 
 
-http://github.com/yracine/device-type.myecobee/blob/master/smartapps/readme.ecobee3RemoteSensor
+http://github.com/disconn3ct/device-type.myecobee/blob/master/smartapps/readme.ecobee3RemoteSensor
 
 
 /****************************************************
@@ -176,7 +175,7 @@ You can enable/disable the smartapp with a button on/off tile (ex.virtual switch
 
 The smartapp can use an outdoor sensor or a virtual weather station, such as
 
-https://github.com/yracine/device-type.weatherstation
+https://github.com/disconn3ct/device-type.weatherstation
 
 to get the oudoor temperature and humidity.
 

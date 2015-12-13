@@ -2,7 +2,6 @@
  *  ecobeeSetClimate
  *
  *  Copyright 2014 Yves Racine
- *  LinkedIn profile: ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
  *
  *  Developer retains all right, title, copyright, and interest, including all copyright, patent rights, trade secret 
  *  in the Background technology. May be subject to consulting fees under the Agreement between the Developer and the Customer. 
@@ -35,8 +34,8 @@ preferences {
 			paragraph "ecobeeSetClimate, the smartapp that sets your ecobee thermostat to a given climate at a given day & time"
 			paragraph "Version 1.1.4" 
 			paragraph "Copyright©2014 Yves Racine"
-				href url:"http://github.com/yracine/device-type.myecobee", style:"embedded", required:false, title:"More information..."  
-					description: "http://github.com/yracine/device-type.myecobee/blob/master/README.md"
+				href url:"http://github.com/disconn3ct/device-type.myecobee", style:"embedded", required:false, title:"More information..."  
+					description: "http://github.com/disconn3ct/device-type.myecobee/blob/master/README.md"
 		}
 		section("Set the ecobee thermostat(s)") {
 			input "ecobee", "device.myEcobeeDevice", title: "Which ecobee thermostat(s)?", multiple: true

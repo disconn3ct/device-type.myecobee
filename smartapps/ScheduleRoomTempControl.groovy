@@ -2,7 +2,6 @@
  *  ScheduleRoomTempControl
  *
  *  Copyright 2015 Yves Racine
- *  LinkedIn profile: ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
  *
  *  Developer retains all right, title, copyright, and interest, including all copyright, patent rights, trade secret 
  *  in the Background technology. May be subject to consulting fees under the Agreement between the Developer and the Customer. 
@@ -45,8 +44,8 @@ def generalSetupPage() {
 			paragraph "ScheduleRoomTempControl, the smartapp that enables better temp control in rooms based on Smart Vents"
 			paragraph "Version 1.6.6" 
 			paragraph "Copyright©2015 Yves Racine"
-				href url:"http://github.com/yracine/device-type.myecobee", style:"embedded", required:false, title:"More information..."  
- 					description: "http://github.com/yracine/device-type.myecobee/blob/master/README.md"
+				href url:"http://github.com/disconn3ct/device-type.myecobee", style:"embedded", required:false, title:"More information..."  
+ 					description: "http://github.com/disconn3ct/device-type.myecobee/blob/master/README.md"
 		}
 		section("Main thermostat at home (used for vent adjustment)") {
 			input (name:"thermostat", type: "capability.thermostat", title: "Which main thermostat?")

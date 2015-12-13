@@ -2,7 +2,6 @@
  *  readme.ecobee3RemoteSensorsInit
  *
  *  Copyright 2015 Yves Racine
- *  LinkedIn profile: ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
  *
  *  Developer retains all right, title, copyright, and interest, including all copyright, patent rights, trade secret 
  *  in the Background technology. May be subject to consulting fees under the Agreement between the Developer and the Customer. 
@@ -24,12 +23,12 @@ Setup time: about 5 minutes
 
 Grab the code at (using the 'raw' button to avoid forking the code): 
 
-https://github.com/yracine/device-type.myecobee/blob/master/myecobee-devicetype.groovy
+https://github.com/disconn3ct/device-type.myecobee/blob/master/myecobee-devicetype.groovy
 Click "Save" & Publish"
 
 If not already created, read the instructions at
 
-https://github.com/yracine/device-type.myecobee
+https://github.com/disconn3ct/device-type.myecobee
 
 
 /*********************************************************************************************
@@ -44,7 +43,7 @@ Create a new Smartapp, click on new Smartapp on the right
 
 From there, use the "From code" tab, and grab the code (using the 'raw' button to avoid forking the code) at:
 
-https://github.com/yracine/device-type.myecobee/blob/master/smartapps/ecobee3RemoteSensorsInit
+https://github.com/disconn3ct/device-type.myecobee/blob/master/smartapps/ecobee3RemoteSensorsInit
 
 Click "Save" & Publish"
 

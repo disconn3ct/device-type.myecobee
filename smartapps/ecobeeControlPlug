@@ -2,7 +2,6 @@
  *  ecobeeControlPlug
  *
  *  Copyright 2014 Yves Racine
- *  LinkedIn profile: ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
  *
  *  Developer retains all right, title, copyright, and interest, including all copyright, patent rights, trade secret 
  *  in the Background technology. May be subject to consulting fees under the Agreement between the Developer and the Customer. 
@@ -30,8 +29,8 @@ preferences {
 		paragraph "ecobeeControlPlug, the smartapp that control your ecobee connected sensor or plug"
 		paragraph "Version 1.1.3" 
 		paragraph "Copyright©2014 Yves Racine"
-			href url:"http://github.com/yracine/device-type.myecobee", style:"embedded", required:false, title:"More information..."  
-				description: "http://github.com/yracine/device-type.myecobee/blob/master/README.md"
+			href url:"http://github.com/disconn3ct/device-type.myecobee", style:"embedded", required:false, title:"More information..."  
+				description: "http://github.com/disconn3ct/device-type.myecobee/blob/master/README.md"
 	}
 
 	section("For this Ecobee thermostat") {

@@ -1,7 +1,6 @@
 /***
  *  My Ecobee Device
  *  Copyright 2014 Yves Racine
- *  LinkedIn profile: ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
  *  Version 3.5.5
  *  Refer to readme file for installation instructions.
  *
