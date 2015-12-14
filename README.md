@@ -2,20 +2,25 @@
 
 My Ecobee Device:  Custom ecobee device to enable more smart thermostat's capabilities within SmartThings 
 
-Author:             Yves Racine
-
-Date:               2014-03-31
+Original Author:             Yves Racine
 
 /*********************************************************************************************
 
- This is a fork of the original code, before the developer put it behind a pay-wall. (Note that
- it is still hosted on github, despite being commercial.) This fork is pushed back to before the project 
- was changed. (As to why, I literally just bought an ecobee last week after seeing the support. I haven't
+ This is a fork of the original code, before the developer put it behind a pay-wall. This fork is pushed back 
+ to before the project was changed. 
+ 
+ So far, the bulk of the repository is unchanged. **WARNING**: The code cannot be used commercially,
+ as required by the original author's license. (Kinda.)
+ 
+ (As to why the fork, I literally just bought an ecobee last week after seeing the support. I haven't
  even had enough time using it to consider contributing. Had it been closed source already,
- I would not have changed thermostats to begin with.)
+ I would not have changed thermostats to begin with. Additionally, the working rewritten version
+ does not exist, so the original author is asking for users to pay for a broken version and hope the
+ fixes appear someday.)
+
+Note the [GitHub ToS](https://help.github.com/articles/github-terms-of-service/#f-copyright-and-content-ownership) explicitly permits this fork in paragraph F1.
 
 /*********************************************************************************************
-
 
 Setup time: about 5 minutes
 
