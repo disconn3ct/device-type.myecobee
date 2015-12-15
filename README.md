@@ -42,9 +42,10 @@ Once you have an account, follow steps 1 and 2 of the [SmartThings GitHub](http:
 
 After the accounts are tied together, you can go back to the SmartThings "My Device Types" page and pick "Settings".
 That will give you the option to add a new repository. In this case, the new repository should look like this:
-**Owner**: disconn3ct
-**Name**: device-type.myecobee
-**Branch**: Master
+
+* **Owner**: disconn3ct
+* **Name**: device-type.myecobee
+* **Branch**: Master
 
 Once you have added the repository, you can click "Update from Repo" and select
 the "device-type.myecobee (master)" repository. This will show the device under
