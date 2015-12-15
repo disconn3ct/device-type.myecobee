@@ -9,7 +9,8 @@
  *  Developer's written consent.
  *
  *  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed
- *  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. *
+ *  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ *
  *  Away from Home with Ecobee Thermostat
  *  Turn off the lights, turn on the security alarm, and lower the settings at ecobee when away from home
  */
@@ -72,18 +73,13 @@ preferences {
 	section("Detailed Notifications") {
 		input "detailedNotif", "bool", title: "Detailed Notifications?", required: false
 	}
-
 }
-
 
 def installed() {
 	log.debug "Installed with settings: ${settings}"
 	log.debug "Current mode = ${location.mode}, people = ${people.collect{it.label + ': ' + it.currentPresence}}"
 	initialize()
-
 }
-
-
 
 def updated() {
 	log.debug "Updated with settings: ${settings}"
@@ -100,7 +96,6 @@ private initialize() {
 	}
 }
 
-
 def alarmSwitchContact(evt) {
 	log.info "alarmSwitchContact, $evt.name: $evt.value"
 
@@ -113,14 +108,12 @@ def alarmSwitchContact(evt) {
 	}
 }
 
-
 def motionEvtHandler(evt) {
 	if (evt.value == "active") {
 		state.lastIntroductionMotion = now()
 		log.debug "Motion at home..."
 	}
 }
-
 
 private residentsHaveBeenQuiet() {
 
@@ -139,7 +132,6 @@ private residentsHaveBeenQuiet() {
 	log.debug "residentsHaveBeenQuiet: $result"
 	return result
 }
-
 
 def presence(evt) {
 	def threshold = residentsQuietThreshold ?: 3 // By default, the delay is 3 minutes
@@ -176,7 +168,6 @@ def presence(evt) {
 		log.debug "Still present; doing nothing"
 	}
 }
-
 
 def takeActions() {
 	Integer thresholdMinutes = 2 // check that the security alarm is close in a 2-minute delay
@@ -243,8 +234,6 @@ def takeActions() {
 			runIn(delay, "checkAlarmSystem", [overwrite: false]) // check that the alarm system is armed
 		}
 	}
-
-
 }
 
 private checkAlarmSystem() {
@@ -254,7 +243,6 @@ private checkAlarmSystem() {
 		}
 		alarmSwitch.on() // try to arm the alarm system again
 	}
-
 
 }
 
@@ -286,6 +274,6 @@ private send(msg) {
 		log.debug("sending text message")
 		sendSms(phone, msg)
 	}
-
 	log.debug msg
 }
+
