@@ -2,7 +2,9 @@
 
 My Ecobee Device:  Custom ecobee device to enable more smart thermostat's capabilities within SmartThings 
 
-Original Author:             Yves Racine
+Based on work by Yves Racine
+
+Contributing Authors: Disconn3ct
 
 /*********************************************************************************************
 
@@ -27,60 +29,73 @@ Setup time: about 5 minutes
 =====================
 INSTALLATION STEPS
 =====================
+**NOTE: These directions need testing.**
 
-/*********************************************************************************************
+For ease of and update, you can use the SmartThings github integration.
 
-<b>1) Create a new device type (My Ecobee Device)</b>
-/*********************************************************************************************
+(This guide will assume you are not doing any development and do not need to create your own
+copy of the code.)
 
-a) Go to https://graph.api.smartthings.com/ide/devices
+You will need a github account, but there is no need to do anything with it beyond signing in.
 
-b) Hit the "+New Device Type" at the top right corner
+Once you have an account, follow steps 1 and 2 of the [SmartThings GitHub](http://docs.smartthings.com/en/latest/tools-and-ide/github-integration.html#setup) guide.
 
-c) Hit the "From Code" tab on the left corner
+After the accounts are tied together, you can go back to the SmartThings "My Device Types" page and pick "Settings".
+That will give you the option to add a new repository. In this case, the new repository should look like this:
+**Owner**: disconn3ct
+**Name**: device-type.myecobee
+**Branch**: Master
 
-d) Copy and paste the code  (you can use the 'raw' button to avoid 'forking' the code) under 
+Once you have added the repository, you can click "Update from Repo" and select
+the "device-type.myecobee (master)" repository. This will show the device under
+"New (only in GitHub)" as "devicetypes/yracine/myecobee-devicetype.src/myecobee-devicetype.groovy".
+Select the checkbox and (at the bottom) the "Publish" checkbox, then select "Execute Update".
 
-https://github.com/disconn3ct/device-type.myecobee/blob/master/myecobee-devicetype.groovy
+**Warning:** If the green box says "Updated 0 devices and created 0 new devices (1 skipped due to errors)"
+the update did not take. (I'm still working on a fix that does not involve
+removing the associated devices and apps and recreating them, but that is
+the "SmartThings Way" so there may be no easy option.)
 
-e) Hit the create button at the bottom
+**Create the SmartApp**
 
-f) Hit the "publish/for me" button at the top right corner (in the code window)
+Go to https://graph.api.smartthings.com/ide/apps
 
+Select "Update from Repo" and pick the "device-type.myecobee (master)" repository again.
 
-/*********************************************************************************************
+This time you should have a lot of entries in "New (only in GitHub)". You can add as few or many as
+you need, but at a minimum you need "smartapps/yracine/myecobeeinit.src/myecobeeinit".
 
-<b>2) Create a new smartapp (My ecobee Init)</b>
+Again, select "Publish" and "Execute Update".
 
-/*********************************************************************************************
+Make sure that enable OAuth in Smartapp is active by selecting the "Properties"
+icon for the "MyEcobeeInit" application.
 
-a) Go to https://graph.api.smartthings.com/ide/apps
+At the bottom is the OAuth fold. Expand that by selecting it and enable it.
 
-b) Hit the "+New SmartApp" at the top right corner
+Then select "Update".
 
-c) Hit the "From Code" tab on the left corner
+=====================
+Update Applications
+=====================
 
-d) Copy and paste the code from My ecobee Init (you can use the 'raw' button to avoid 'forking' the code)
-under http://github.com/disconn3ct/device-type.myecobee/tree/master/smartapps
+To update the apps and incorporate any changes from the repository, you will
+need to sync again ("Update from Repo" as above). Any applications with the
+update icon (magnifying glass) can be updated.
 
-e) Hit the create button at the bottom
+Select the icon, then it will show local and remote versions with changes 
+highlighted.
 
-f) Make sure that enable OAuth in Smartapp is active 
+You can review the changes, or simply click "Overwrite local version" and "Save"
+to include them automatically.
 
-* Goto app settings (top right corner), 
-* Click on Oauth (middle of the page), and enable OAuth in Smart app
-* Hit "Update" at the bottom
+This same process can be used to update the device type.
 
-g) Go back to the code window, and hit the "publish/for me" button at the top right corner 
-
-/*********************************************************************************************
-
-<b>3) Execute My ecobee Init</b>
-
-/*********************************************************************************************
+=====================
+Configure the App
+=====================
 
 From your phone or tablet, within the smartThings app and on the main screen, click on the Smartapps link in the upper
-section of any of the following screens: Home & Marketspace, and then MyApps (last item in the list).</b>
+section of the Home or Marketspace page, and then select My Apps at the end of the list.
 
 /*********************************************************************************************
 
